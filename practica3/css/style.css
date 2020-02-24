@@ -1,0 +1,196 @@
+
+*{
+    font-family: 'Raleway';
+    
+   
+}
+
+
+#div-line
+
+
+.flex-wrapper{
+        
+    margin: 1px, 10px;
+    height: 100px;
+    width: 100px;
+    display:none; 
+}
+
+
+.header-box-mobile{
+
+ 
+    display:flex;
+  
+    background-color:rgb(1, 1, 112);
+    width:100vw;
+    height:30px;
+
+    margin:0 5px;
+   
+}
+.main-box-mobile{
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-evenly;
+    background-image: url("banner.png");
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:300px;
+     margin:0 5px;
+     align-items: center;
+    
+
+}
+#label{
+    margin: 0px 0px;    
+   /* display: block; */
+    
+    font-weight: 700;
+    
+    
+}
+
+.header-title{
+   display: flex;
+   color: white;
+   background:rgb(4, 4, 71);
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   letter-spacing: 2px;
+   height: 70px;
+   width: 100vw;
+    /* align-items: flex-start;*/
+    
+}
+
+.header1{
+    width: 100vw;
+    display:flex;
+    
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+           
+}
+
+.header2{
+    
+    width: 100vw;
+    display:flex;
+    
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+           
+}
+
+#main label{
+    padding: 2px 5px;
+    display:block;
+    justify-content:center;
+    align-content: center;
+    font-weight:bolder;
+    font-family:'raleway';
+    font-size: x-large;
+    color:white;
+    margin-top:10px;
+    margin-left: 45px;
+    font-size: x-large;
+}
+
+.main-red-line-mobile{
+position:flex;
+justify-content: center;
+
+justify-items: center;    
+border-bottom: 2px solid red;    
+width: 100px;
+
+}
+
+#main .button-wrapper{
+display: flex;
+justify-content: center;
+}
+
+
+#main .button-wrapper button{
+    padding:2px 4px;
+    
+    border-radius:5px;
+    box-shadow:1x 1px 2px #999;
+}
+
+#main .button-wrapper button:hover{
+    cursor:pointer;   
+}
+
+
+#main .button-wrapper button.btn-begin{
+   /* background:red;
+    color:white;
+    border:1px;
+    border-radius: 1px;
+    transition:all 500ms ease;
+    height: 1%;*/
+    background-color: #ff3131;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 60vh auto 30vh auto;
+    cursor: pointer;
+
+}
+
+@media only screen and (min-width: 1px) and (max-width:520px) {
+
+    /*Mobile*/
+
+    .mobile{
+        
+        display:flex;
+     
+    }
+@media only screen and (min-width: 521px) {
+
+    /*Desktop*/
+
+    .desktop{
+        
+       display:block;
+       width:100%;
+        
+        /* align-items: flex-start;*/
+      
+    }
+      
+    }
+    
+  /* #main-header{
+
+    width:100vw;
+    margin:0;
+    margin-top:30px;
+    */
+  
+   }
+
+}
