@@ -99,67 +99,67 @@
 //inicio ejercicio 4 CASA
 
 //practica 4
-//recibir del usuario los datos de 3 lados de un triangulo (ladoUno, ladoDos, ladoTres)
-//con base en esos datos, determinar el área del triangulo y mostrarla en un mensaje (areaTriangulo)
+//recibir del usuario los datos de 3 lados de un triangulo (sideOne, sideTwo, sideThree)
+//con base en esos datos, determinar el área del triangulo y mostrarla en un mensaje (areaTriangle)
 //en otro mensaje, indicar si el triangulo es isoseles (al menos dos lados iguales y un lado mas corto), 
-//equilátero (todos sus lados iguales) o escaleno (todos sus lados de diferente longitud) (tipoTriangulo).
+//equilátero (todos sus lados iguales) o escaleno (todos sus lados de diferente longitud) (typeTriangle).
 
-//1) Declarar las variables ladoUno, ladoDoc, ladoTres donde se almacenarán las longitudes de 
+//1) Declarar las variables sideOne, sideTwo, sideThree donde se almacenarán las longitudes de 
     //los lados del triangulo (var)
-//2) Declarar la variable semiPerimetro en la cual se almacenará el resultado de calcular el perímetro del triangulo (var)
-//3) Declarar la variable areaTriangulo en la cual se almacenará el resultado obtenido de calcular el Area del Triangulo (var)
-//4) Declarar la variable tipoTriangulo en la cual se almacenará el resultado de evaluar los valores correspondientes a
+//2) Declarar la variable semiPerimeter en la cual se almacenará el resultado de calcular el perímetro del triangulo (var)
+//3) Declarar la variable areaTriangle en la cual se almacenará el resultado obtenido de calcular el Area del Triangulo (var)
+//4) Declarar la variable typeTriangle en la cual se almacenará el resultado de evaluar los valores correspondientes a
     //los lados del triangulo y establecer si el triangulo es equilatero, isoseles o escaleno
 //4) requerir del usuario la captura de 3 datos a través del método Prompt, correspondientes a la longutud de cada
-    //lado del triangulo, los cuales serán asignados a las variables ladoUno, ladoDos, ladoTres 
-//5) Almacenar el resultado de calcular el perímetro en la variable semiPerimetro, para lo cual, se suman las longitudes 
+    //lado del triangulo, los cuales serán asignados a las variables sideOne, sideTwo, sideThree 
+//5) Almacenar el resultado de calcular el perímetro en la variable semiPerimeter, para lo cual, se suman las longitudes 
     //de cada lado del triangulo y a continuacion se realiza la división del resultado de la suma entre 2 
-    // (ladoUno+ladoDos+ladoTres)/2 (Arithmetic Operators)
-//6) Almacenar el resultado de calcular el Area del triangulo en la variable areaTriangulo. Tomando el teorema de Herón, 
+    // (sideOne+sideTwo+sideThree)/2 (Arithmetic Operators)
+//6) Almacenar el resultado de calcular el Area del triangulo en la variable areaTriangle. Tomando el teorema de Herón, 
     //calcular la raiz cuadrada al valor que se obtiene de realizar la multiplicación del valor del 
-    //semi perímtero (semiPerimetro) por el valor obtenido luego de realizar tres operaciones sub-secuentes,
-    //a semiPerimetro restarle ladoUno y multiplicarlo por semiPerimetro menos ladoDos y multiplicarlo por 
-    //semiPerimetro menos ladoTres 
-    //areaTriangulo = sqr(semiPerimetro * (semiPerimetro - ladoUno) * (semiPerimetro - ladoDos) * (semiPerimetro - ladoTres) )
+    //semi perímtero (semiPerimeter) por el valor obtenido luego de realizar tres operaciones sub-secuentes,
+    //a semiPerimeter restarle sideOne y multiplicarlo por semiPerimeter menos sideTwo y multiplicarlo por 
+    //semiPerimeter menos sideThree 
+    //areaTriangle = sqr(semiPerimeter * (semiPerimeter - sideOne) * (semiPerimeter - sideTwo) * (semiPerimeter - sideThree) )
     //(Arithmetic Operators)
-//7) Imprimir un mensaje que diga el area del triangulo segun los valores capturados es igual a areaTriangulo
-//8) Evaluar si el triangulo es equilatero, dados los valores para cada lado del triagulo, determinar si ladoUno 
-    //es igual ladoDos ó ladoUno es igual a ladoTres ó ladoDos es igual a ladoTres, en caso de
-    //cumplirse alguna de las operaciones lógicas asignar a tipoTriangulo el valor Equilatero, en caso contrario evaluar
+//7) Imprimir un mensaje que diga el area del triangulo segun los valores capturados es igual a areaTriangle
+//8) Evaluar si el triangulo es equilatero, dados los valores para cada lado del triagulo, determinar si sideOne 
+    //es igual sideTwo ó sideOne es igual a sideThree ó sideTwo es igual a sideThree, en caso de
+    //cumplirse alguna de las operaciones lógicas asignar a typeTriangle el valor Equilatero, en caso contrario evaluar
     //si el triangulo es de tipo isoseles o escaleno
 //9) Evaluar si el triangulo es isoceles, dados los valores para cada lado del triangulo, determinar si 
-    //ladoUno es igual a ladoDos y ladoTres es menor que lado uno ó ladoUno es igual a ladoTres y ladoDos es menor que
-    //ladoUno ó ladoDos es igual a ladoTres y ladoUno es menor a ladoDos, en caso de cumplirse alguna de las 
-    //expresiones evaluadas asignar a tipoTriangulo el valor Isoseles, en caso contrario evaluar si el triangulo es
+    //sideOne es igual a sideTwo y sideThree es menor que lado uno ó sideOne es igual a sideThree y sideTwo es menor que
+    //sideOne ó sideTwo es igual a sideThree y sideOne es menor a sideTwo, en caso de cumplirse alguna de las 
+    //expresiones evaluadas asignar a typeTriangle el valor Isoseles, en caso contrario evaluar si el triangulo es
     //escaleno
 //10) Evaluar si el triangulo es escaleno, dados los valores para cada lado del triangulo, determinar si
-    //ladoUno es distinto que ladoDos y ladoUno es distinto de ladoTres y ladoDos es distinto de ladoTres,
-    //en caso de cumplirse alguna de las expresiones evaluadas asignar a tipoTriangulo el valor Escaleno, en caso contrario,
-    //asignar a tipoTriangulo el valor Otro.
-//11) Imprimir un mensaje que diga el tipo de triangulo de acuerdo a los valores capturados es: tipoTriangulo
+    //sideOne es distinto que sideTwo y sideOne es distinto de sideThree y sideTwo es distinto de sideThree,
+    //en caso de cumplirse alguna de las expresiones evaluadas asignar a typeTriangle el valor Escaleno, en caso contrario,
+    //asignar a typeTriangle el valor Otro.
+//11) Imprimir un mensaje que diga el tipo de triangulo de acuerdo a los valores capturados es: typeTriangle
 
-var ladoUno = parseFloat (prompt("Ingresa el primero de los tres valores que corresponde a un Lado del triangulo...","escribe el valor"));
-var ladoDos = parseFloat (prompt("Ingresa el segundo de los valores para el siguiente Lado del triangulo...", "escribe el valor"));
-var ladoTres = parseFloat (prompt("Ingreda el tercero de los valores o tercer lado del triangulo...", "escribe el valor"));
+var sideOne = parseFloat (prompt("Ingresa el primero de los tres valores que corresponde a un Lado del triangulo...","escribe el valor"));
+var sideTwo = parseFloat (prompt("Ingresa el segundo de los valores para el siguiente Lado del triangulo...", "escribe el valor"));
+var sideThree = parseFloat (prompt("Ingreda el tercero de los valores o tercer lado del triangulo...", "escribe el valor"));
 
-var semiPerimetro = (ladoUno + ladoDos + ladoTres) / 2;
+var semiPerimeter = (sideOne + sideTwo + sideThree) / 2;
 
-var areaTriangulo = Math.sqrt(semiPerimetro * (( semiPerimetro - ladoUno) * (semiPerimetro - ladoDos) * (semiPerimetro - ladoTres)));
+var areaTriangle = Math.sqrt(semiPerimeter * (( semiPerimeter - sideOne) * (semiPerimeter - sideTwo) * (semiPerimeter - sideThree)));
 
-    console.log(`El área de un triangulo cuyos lados tienen las magnitudes ${ladoUno} , ${ladoDos} y ${ladoTres} es: ${areaTriangulo}`);
+    console.log(`El área de un triangulo cuyos lados tienen las magnitudes ${sideOne} , ${sideTwo} y ${sideThree} es: ${areaTriangle}`);
 
 
-     if ( ladoUno === ladoDos && ladoUno === ladoTres || ladoDos === ladoTres){
-            tipoTriangulo = "Equilatero"
-    } else if ( ladoUno === ladoDos && ladoTres < ladoUno || ladoUno === ladoTres && ladoDos < ladoUno){
-            tipoTriangulo = "Isoceles"
-    } else if ( ladoUno !== ladoDos && ladoDos !== ladoTres && ladoUno !== ladoTres){
-            tipoTriangulo === "Escaleno"
+     if ( sideOne === sideTwo && sideOne === sideThree || sideTwo === sideThree){
+            typeTriangle = "Equilatero"
+    } else if ( sideOne === sideTwo && sideThree < sideOne || sideOne === sideThree && sideTwo < sideOne){
+            typeTriangle = "Isoceles"
+    } else if ( sideOne !== sideTwo && sideTwo !== sideThree && sideOne !== sideThree){
+            typeTriangle === "Escaleno"
     } else {
-            tipoTriangulo === "Otro"
+            typeTriangle === "Otro"
     }
 
-    console.log(`El triangulo formado por 3 lados con magnitudes ${ladoUno} , ${ladoDos} y ${ladoTres} respectivamente, es de tipo: ${tipoTriangulo}`);
+    console.log(`El triangulo formado por 3 lados con magnitudes ${sideOne} , ${sideTwo} y ${sideThree} respectivamente, es de tipo: ${typeTriangle}`);
 
 
 
