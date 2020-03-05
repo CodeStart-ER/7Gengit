@@ -100,43 +100,43 @@
 
 //practica 4
 //recibir del usuario los datos de 3 lados de un triangulo (ladoUno, ladoDos, ladoTres)
-//con base en esos datos, determinar el área del triangulo y mostrarla en un mensaje (areaTri)
+//con base en esos datos, determinar el área del triangulo y mostrarla en un mensaje (areaTriangulo)
 //en otro mensaje, indicar si el triangulo es isoseles (al menos dos lados iguales y un lado mas corto), 
-//equilátero (todos sus lados iguales) o escaleno (todos sus lados de diferente longitud) (tipoTri).
+//equilátero (todos sus lados iguales) o escaleno (todos sus lados de diferente longitud) (tipoTriangulo).
 
 //1) Declarar las variables ladoUno, ladoDoc, ladoTres donde se almacenarán las longitudes de 
     //los lados del triangulo (var)
-//2) Declarar la variable semiPeriTri en la cual se almacenará el resultado de calcular el perímetro del triangulo (var)
-//3) Declarar la variable areaTri en la cual se almacenará el resultado obtenido de calcular el Area del Triangulo (var)
-//4) Declarar la variable tipoTri en la cual se almacenará el resultado de evaluar los valores correspondientes a
+//2) Declarar la variable semiPerimetro en la cual se almacenará el resultado de calcular el perímetro del triangulo (var)
+//3) Declarar la variable areaTrianguloangulo en la cual se almacenará el resultado obtenido de calcular el Area del Triangulo (var)
+//4) Declarar la variable tipoTriangulo en la cual se almacenará el resultado de evaluar los valores correspondientes a
     //los lados del triangulo y establecer si el triangulo es equilatero, isoseles o escaleno
 //4) requerir del usuario la captura de 3 datos a través del método Prompt, correspondientes a la longutud de cada
     //lado del triangulo, los cuales serán asignados a las variables ladoUno, ladoDos, ladoTres 
-//5) Almacenar el resultado de calcular el perímetro en la variable semiPeriTri, para lo cual, se suman las longitudes 
+//5) Almacenar el resultado de calcular el perímetro en la variable semiPerimetro, para lo cual, se suman las longitudes 
     //de cada lado del triangulo y a continuacion se realiza la división del resultado de la suma entre 2 
     // (ladoUno+ladoDos+ladoTres)/2 (Arithmetic Operators)
-//6) Almacenar el resultado de calcular el Area del triangulo en la variable areaTri. Tomando el teorema de Herón, 
+//6) Almacenar el resultado de calcular el Area del triangulo en la variable areaTriangulo. Tomando el teorema de Herón, 
     //calcular la raiz cuadrada al valor que se obtiene de realizar la multiplicación del valor del 
-    //semi perímtero (semiPeriTri) por el valor obtenido luego de realizar tres operaciones sub-secuentes,
-    //a semiPeritri restarle ladoUno y multiplicarlo por semiPeritri menos ladoDos y multiplicarlo por 
-    //semiPeritri menos ladoTres 
-    //areaTri = sqr(semiPeriTri * (semiPeritri - ladoUno) * (semiPeriTri - ladoDos) * (semiPeriTri - ladoTres) )
+    //semi perímtero (semiPerimetro) por el valor obtenido luego de realizar tres operaciones sub-secuentes,
+    //a semiPerimetro restarle ladoUno y multiplicarlo por semiPerimetro menos ladoDos y multiplicarlo por 
+    //semiPerimetro menos ladoTres 
+    //areaTriangulo = sqr(semiPerimetro * (semiPerimetro - ladoUno) * (semiPerimetro - ladoDos) * (semiPerimetro - ladoTres) )
     //(Arithmetic Operators)
-//7) Imprimir un mensaje que diga el area del triangulo segun los valores capturados es igual a areaTri
+//7) Imprimir un mensaje que diga el area del triangulo segun los valores capturados es igual a areaTriangulo
 //8) Evaluar si el triangulo es equilatero, dados los valores para cada lado del triagulo, determinar si ladoUno 
     //es igual ladoDos ó ladoUno es igual a ladoTres ó ladoDos es igual a ladoTres, en caso de
-    //cumplirse alguna de las operaciones lógicas asignar a tipoTri el valor Equilatero, en caso contrario evaluar
+    //cumplirse alguna de las operaciones lógicas asignar a tipoTriangulo el valor Equilatero, en caso contrario evaluar
     //si el triangulo es de tipo isoseles o escaleno
 //9) Evaluar si el triangulo es isoceles, dados los valores para cada lado del triangulo, determinar si 
     //ladoUno es igual a ladoDos y ladoTres es menor que lado uno ó ladoUno es igual a ladoTres y ladoDos es menor que
     //ladoUno ó ladoDos es igual a ladoTres y ladoUno es menor a ladoDos, en caso de cumplirse alguna de las 
-    //expresiones evaluadas asignar a tipoTri el valor Isoseles, en caso contrario evaluar si el triangulo es
+    //expresiones evaluadas asignar a tipoTriangulo el valor Isoseles, en caso contrario evaluar si el triangulo es
     //escaleno
 //10) Evaluar si el triangulo es escaleno, dados los valores para cada lado del triangulo, determinar si
     //ladoUno es distinto que ladoDos y ladoUno es distinto de ladoTres y ladoDos es distinto de ladoTres,
-    //en caso de cumplirse alguna de las expresiones evaluadas asignar a tipoTri el valor Escaleno, en caso contrario,
-    //asignar a tipoTri el valor Otro.
-//11) Imprimir un mensaje que diga el tipo de triangulo de acuerdo a los valores capturados es: tipoTri
+    //en caso de cumplirse alguna de las expresiones evaluadas asignar a tipoTriangulo el valor Escaleno, en caso contrario,
+    //asignar a tipoTriangulo el valor Otro.
+//11) Imprimir un mensaje que diga el tipo de triangulo de acuerdo a los valores capturados es: tipoTriangulo
 
 
 
