@@ -1,3 +1,45 @@
+var string = "una cadena de caracteres";
+var number = 4;
+var object = {
+    name:"some name",
+    age:30,
+    phone:"5544332211"
+}
+
+var array = [
+    "koder a",
+    "koder b",
+    "koder c"
+]
+
+var numbersArray = [
+1,
+2,
+3
+
+]
+
+var someNumber = 34
+
+var crazyArray = [
+
+    "a",
+    "some string",
+    6,
+    {
+        some:"object"
+    }
+]
+
+
+
+console.log("Hello Koders");
+console.warn("aware koders");
+console.error("Noooo Koders");
+
+
+/*practica 8*/
+
 var x = 4;
 var y = 10;
 
@@ -10,4 +52,6 @@ console.info("%cLa suma x + y tiene como resultado:(x) ","background: black; col
 console.info("%cLa resta x - y tiene como resultado: ","background: red; color:yellow; font-size:medium; font-weight:bold", operacion = x -y)
 console.info("%cLa multiplicación x * y tiene como resultado: ","background: grey; color: black; font-size:medium; font-weight:bold" , operacion = x * y)
 console.info("%cLa división x / y tiene como resultado: ","background: blue; color: white; font-size: medium; font-weight: bold", operacion = x / y)
+
+/*fin practica 8*/
 
