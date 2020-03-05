@@ -107,7 +107,7 @@
 //1) Declarar las variables ladoUno, ladoDoc, ladoTres donde se almacenarán las longitudes de 
     //los lados del triangulo (var)
 //2) Declarar la variable semiPerimetro en la cual se almacenará el resultado de calcular el perímetro del triangulo (var)
-//3) Declarar la variable areaTrianguloangulo en la cual se almacenará el resultado obtenido de calcular el Area del Triangulo (var)
+//3) Declarar la variable areaTriangulo en la cual se almacenará el resultado obtenido de calcular el Area del Triangulo (var)
 //4) Declarar la variable tipoTriangulo en la cual se almacenará el resultado de evaluar los valores correspondientes a
     //los lados del triangulo y establecer si el triangulo es equilatero, isoseles o escaleno
 //4) requerir del usuario la captura de 3 datos a través del método Prompt, correspondientes a la longutud de cada
@@ -138,8 +138,28 @@
     //asignar a tipoTriangulo el valor Otro.
 //11) Imprimir un mensaje que diga el tipo de triangulo de acuerdo a los valores capturados es: tipoTriangulo
 
+var ladoUno = parseFloat (prompt("Ingresa el primero de los tres valores que corresponde a un Lado del triangulo...","escribe el valor"));
+var ladoDos = parseFloat (prompt("Ingresa el segundo de los valores para el siguiente Lado del triangulo...", "escribe el valor"));
+var ladoTres = parseFloat (prompt("Ingreda el tercero de los valores o tercer lado del triangulo...", "escribe el valor"));
+
+var semiPerimetro = (ladoUno + ladoDos + ladoTres) / 2;
+
+var areaTriangulo = Math.sqrt(semiPerimetro * (( semiPerimetro - ladoUno) * (semiPerimetro - ladoDos) * (semiPerimetro - ladoTres)));
+
+    console.log(`El área de un triangulo cuyos lados tienen las magnitudes ${ladoUno} , ${ladoDos} y ${ladoTres} es: ${areaTriangulo}`);
 
 
+     if ( ladoUno === ladoDos && ladoUno === ladoTres || ladoDos === ladoTres){
+            tipoTriangulo = "Equilatero"
+    } else if ( ladoUno === ladoDos && ladoTres < ladoUno || ladoUno === ladoTres && ladoDos < ladoUno){
+            tipoTriangulo = "Isoceles"
+    } else if ( ladoUno !== ladoDos && ladoDos !== ladoTres && ladoUno !== ladoTres){
+            tipoTriangulo === "Escaleno"
+    } else {
+            tipoTriangulo === "Otro"
+    }
+
+    console.log(`El triangulo formado por 3 lados con magnitudes ${ladoUno} , ${ladoDos} y ${ladoTres} respectivamente, es de tipo: ${tipoTriangulo}`);
 
 
 
