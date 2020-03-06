@@ -154,9 +154,9 @@ var areaTriangle = Math.sqrt(semiPerimeter * (( semiPerimeter - sideOne) * (semi
     } else if ( sideOne === sideTwo && sideThree < sideOne || sideOne === sideThree && sideTwo < sideOne){
             typeTriangle = "Isoceles"
     } else if ( sideOne !== sideTwo && sideTwo !== sideThree && sideOne !== sideThree){
-            typeTriangle === "Escaleno"
+            typeTriangle = "Escaleno"
     } else {
-            typeTriangle === "Otro"
+            typeTriangle = "Otro"
     }
 
     console.log(`El triangulo formado por 3 lados con magnitudes ${sideOne} , ${sideTwo} y ${sideThree} respectivamente, es de tipo: ${typeTriangle}`);
