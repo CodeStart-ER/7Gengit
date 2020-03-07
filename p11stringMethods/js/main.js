@@ -134,19 +134,21 @@
 //palabra "Koder", y mostrar el mensaje de nuevo al usuario
 
 
+//codifo
 var countWord;
 var textModified;
-const textStudent = `Cada estudiante tiene su ritmo, cada estudiante tiene su talento, y cada estudiante 
+var x;
+const TEXT_STUDENT = `Cada estudiante tiene su ritmo, cada estudiante tiene su talento, y cada estudiante 
     complementa al estudiante que tiene a su lado`;
 
 
-    countWord = textStudent.split('estudiante').length-1
-
+    countWord = TEXT_STUDENT.split('estudiante').length-1
+    x = TEXT_STUDENT.length-1
 
     console.log(`la palabra estudiante se repite un total de ${countWord} veces`)
 
 
-    textModified = textStudent.replace (/estudiante/g, "koder");
+    textModified = TEXT_STUDENT.replace (/estudiante/g, "koder");
     
     console.log (`la palabra nueva es: ${textModified}`)
 
