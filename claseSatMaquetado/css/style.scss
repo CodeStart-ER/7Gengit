@@ -1,0 +1,50 @@
+.element-container{
+    font-size: 40px;
+    width: 500px;
+    color: #ffffff;
+    height: 350px;
+    border: 6px dotted magenta;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ffffff;
+    align-content: center;
+    
+    
+    //eje x ---> el eje es determinado por flex-direction por lo cual 
+    //puede ser cambiado x (row) a y (column) o y a x. siempre debemos definir el método flex, y despues
+    //establecemos el atributo (flex, block, etc). luego de eso establecemos la dirección o eje en el cual
+    //se van a distribuir los elementos.
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    //eje contrario
+    align-items:  flex-start;
+    //align-items:flex-start;
+  //  flex-wrap: wrap-reverse;
+
+
+}
+
+.element{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+   // height: 50px;
+    
+    border: 2px solid #000000;
+    background-color: peru;
+    padding: 5px;
+    margin: 10px;
+    &.element-1{
+       align-self: flex-start;
+    }
+    &.element-2{
+        align-self: flex-end;
+    }
+    &.element-3{
+        align-self: auto;
+       
+   
+      
+    }
+}

@@ -1,0 +1,51 @@
+.element-container {
+  font-size: 40px;
+  width: 500px;
+  color: #ffffff;
+  height: 350px;
+  border: 6px dotted magenta;
+  padding: 10px;
+  margin: 20px;
+  background-color: #ffffff;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.element {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #000000;
+  background-color: peru;
+  padding: 5px;
+  margin: 10px;
+}
+
+.element.element-1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.element.element-2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.element.element-3 {
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+/*# sourceMappingURL=style.css.map */

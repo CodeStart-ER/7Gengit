@@ -135,6 +135,7 @@
 
 
 //codifo
+/*
 var countWord;
 var textModified;
 var x;
@@ -152,8 +153,27 @@ const TEXT_STUDENT = `Cada estudiante tiene su ritmo, cada estudiante tiene su t
     
     console.log (`la palabra nueva es: ${textModified}`)
 
+    */
+//NOTA: Isra, me faltaron los algarotimos, los completo en casa y actualizo el archivo en el repo
 
 
-// NOTA: Isra, me faltaron los algarotimos, los completo en casa y actualizo el archivo en el repo
+//2020/03/06
+
+function suma(a,b){
+        return a + b
+
+}
+
+var resta = (a,b) => {
+        return a-b
+}
+
+var numberKoders = prompt (`introduzca la cantidad de koders:`)
+
+var mensajeKorder = (messageKoders) => {
+
+        var numKodersInt = parseInt(messageKoders)
+        console.log(`La cantidad de koders es: ${numKodersInt}`)
+}
 
 
