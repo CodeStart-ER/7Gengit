@@ -67,26 +67,17 @@ $desktop: 768px;
     
 }
 
-@mixin resizeImageY($x) {
-    width: 100%;
-    clip-path: inset(0 0 $x 0);
-    -webkit-clip-path: inset(0 0 $x 0);
-    margin-bottom: -$x;
-  }
-  
-  @mixin resizeImageX($x) {
-    $half: $x/2;
-    clip-path: inset(0 $half+px 0 0);
-    -webkit-clip-path: inset(0 $half+px 0 $half+px);
-    margin-right: -$half+px;
-    margin-left:  -$half+px;
-  }
 /*Fonts*/
 
 /*Body Copy*/
 
 /*Body*/
 $PublicSans: 'Public Sans';
+
+.container-fluid{
+
+    width:99%;
+}
 
 
 .logoBrand{
@@ -101,7 +92,7 @@ $PublicSans: 'Public Sans';
     position: relative;
     display: block;
     z-index: 1;
-    width: 1199px;
+    width: 100%;
     max-width: 500px;
     height: 946;
     max-height: 400px;   
@@ -150,98 +141,96 @@ $PublicSans: 'Public Sans';
 }
 
 .section-start{
+    width: 100%;    
+    height:665px;
+    //position: absolute;
     
+    
+    z-index: -1;
     background-color: $VeryLightGray;
 
         
         .section-start-left{
             position: absolute;
+            z-index: 1;
+            //overflow: visible visible;
             padding-top: 100px;
             padding-left: 120px;
-            padding-right: 30px;
-            height:100%;
+            
+            height: 400px;
+            width: 600px;
             display: flex;
             flex-direction: column;
-            align-items:left;
             justify-content: center;
+            align-items:left;
+            
             
             
         }
 
     }
 
-    .boxstart{
-        margin-top: 10px;
-        display: block;
-        position: relative;
-        z-index: 0;
+    .section-start-right{
         
+        height:700px;
+        width:98%;
+        
+    }
 
-    
+ 
     
         .crop {
-            position: absolute;
-            z-index: 0;
-            width: 650px;
-            height: 500px;
-            overflow: hidden;
+            position: relative;
+            
+            z-index: 2;
+
+            width: 920px;
+            height: 700px;
+            overflow:hidden  hidden;
+            margin-left: -40px;
+            //margin-left: 50px;
+            
             //object-fit: none;
             //object-position: center;
-          
-            
         }
     
         .crop img {
-           
-            width: 1000px;
-            height: 700px;
-            margin: -190px 0 0 0;
+            width: 1130px;
+            height: 910px;
+            margin: -240px 0 0 0px;
+            
+
             
         }
 
         .crop2 {
-            position: relative;
-            z-index: 1;
+            position:absolute;
+            z-index: 2;
+            overflow:hidden hidden;
+         //   overflow-x: hidden;
             
-            width: 500px;
-            height: 500px;
-            
-            /*margin-bottom: -20px;*/
-            overflow: hidden;
-            
-            //object-fit: none;
-            //object-position: center;
-            margin-left: 150px;
+            width: 656px;
+            height: 900px;
+           
+            margin-left: 50px;
             
         }
         
         .crop2 img {
-             
-            width: 600px;
-            height: 700px;
-            margin: -20px 0 0 0;
-            overflow: -5px 0 0 0;
+            padding: 0;
+            width: 800px;
+            height: 980px;
+            margin: -120px 0 0 0;
+            
+          
         }
+       
     
-        
-    }
    
-  //  .bg-image{
-       
-  //     width: 80%;
-  //     height: 956px;
-  //     background-repeat: none;
-  //     background-size: contain;
-
-       
-        // max-height: 520px;
-       // height: 956px;
-       // width: 1190px;
-       // max-width: 48vw;
-       // object-fit: none;   
-       // object-position: left;
-                
-//}
+ .section-cards{
+    height:500px;
+    background-color: $LightGryishBlue;
+ }
 
 .custom-btn {
         
