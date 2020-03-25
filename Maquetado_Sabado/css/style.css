@@ -4,6 +4,16 @@
 /*Element Sizes*/
 /*Mixins*/
 /*Mixins*/
+/*Media Query*/
+/*********************
+BREAKPOINTS
+*********************/
+/* 
+@include breakpoint(breakpointname) {
+		 Styles 
+	}
+
+*/
 /*Fonts*/
 /*Body Copy*/
 /*Body*/
@@ -155,8 +165,37 @@
 }
 
 .section-cards {
+  padding: 150px 0 0 100px;
   height: 500px;
   background-color: #f3f4f6;
+}
+
+.section-cards .card-container {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-cards .card-container .card {
+  background-color: #f3f4f6;
+  border: none;
+  width: 400px;
+  height: 200px;
+}
+
+.section-cards .card-container .card .card-img-top {
+  height: 100px;
+  width: 100px;
+  margin: 5px 0 0 10px;
+}
+
+.section-cards .card-container .card .card-img-top .card-body .card-title .card-text {
+  color: #f3f4f6;
 }
 
 .custom-btn {
@@ -180,10 +219,5 @@
   color: #ffffff;
   font-weight: bolder;
   font-size: 15px;
-}
-
-/*Media Query*/
-@media screen and (min-width: 768px) {
-  /*Section see how*/
 }
 /*# sourceMappingURL=style.css.map */

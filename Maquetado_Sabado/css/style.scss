@@ -26,17 +26,31 @@ $desktop: 768px;
 // No media query since this is the default in Bootstrap
 
 /*Mixins*/
+
+
+/*Media Query*/
+/*********************
+BREAKPOINTS
+*********************/
+/* 
+@include breakpoint(breakpointname) {
+		 Styles 
+	}
+
+*/
+
 @mixin desktop {
-    @media screen and (min-width: #{$desktop}) {
+    @media screen and (min-width: 968px) {
         @content;
     }
 }
 
 @mixin mobile {
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
+
 
 @mixin linearGradient($top, $bottom){
     background: $top; /* Old browsers */
@@ -98,9 +112,7 @@ $PublicSans: 'Public Sans';
     max-height: 400px;   
     object-fit: none; 
 }
-.navbar-toggler{
 
-}
 
 
 .navbar{
@@ -120,10 +132,7 @@ $PublicSans: 'Public Sans';
 
     }
 
-    .navbar-brand{
 
-        
-    }
     .navbar-nav {
 
         display: flex;
@@ -228,9 +237,39 @@ $PublicSans: 'Public Sans';
     
    
  .section-cards{
+    padding:150px 0 0 100px; 
     height:500px;
     background-color: $LightGryishBlue;
- }
+    .card-container{
+        padding:30px; 
+        display:flex;
+        flex-direction: row;
+        
+        .card{
+        background-color: $LightGryishBlue;
+            border:none;
+            width: 400px;
+            height: 200px;
+            .card-img-top{
+                height: 100px;
+                width: 100px;
+                margin: 5px 0 0 10px;
+                    .card-body{
+
+                            .card-title{
+                                .card-text{
+                                    color:$LightGryishBlue;
+                                }
+
+                            }
+                    }
+
+            }
+        } 
+    }
+}
+
+
 
 .custom-btn {
         
@@ -244,20 +283,6 @@ $PublicSans: 'Public Sans';
 @include btnTextColor(#ffffff);
 
 }
-
-
-/*Media Query*/
-@include mobile {
-
-}
-
-@include desktop {
-
-    /*Section see how*/
-
-
-}
-
 
 
 

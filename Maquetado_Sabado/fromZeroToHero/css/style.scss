@@ -1,0 +1,81 @@
+/* -------------------------------------------------------------------------- */
+// All Bootstrap 4 Sass Mixins [Cheat sheet]
+// Updated to Bootstrap v4.4.x
+// @author https://anschaef.de
+// @see https://github.com/twbs/bootstrap/tree/master/scss/mixins
+/* -------------------------------------------------------------------------- */
+
+// Grid variables
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px
+);
+
+$container-max-widths: (
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1140px
+);
+
+/* -------------------------------------------------------------------------- */
+
+// Breakpoint viewport sizes and media queries.
+// Breakpoints are defined as a map of (name: minimum width), order from small to large:
+//    (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@include media-breakpoint-up($name, $breakpoints: $grid-breakpoints);
+// Media of at most the maximum breakpoint width. No query for the largest breakpoint.
+// Makes the @content apply to the given breakpoint and narrower.
+@include media-breakpoint-down($name, $breakpoints: $grid-breakpoints);
+// Media that spans multiple breakpoint widths.
+// Makes the @content apply between the min and max breakpoints
+@include media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints);
+// Media between the breakpoint's minimum and maximum widths.
+// No minimum for the smallest breakpoint, and no maximum for the largest one.
+// Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+@include media-breakpoint-only($name, $breakpoints: $grid-breakpoints);
+
+// Example usage
+.some-class {
+    @include media-breakpoint-up(sm) {
+        // Larger than sm: 576px
+        display: inline;
+    }
+    @include media-breakpoint-down(md) {
+        // Smaller than md: 768px
+        display: block;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+
+// Grid system
+// @see https://getbootstrap.com/docs/4.4/layout/grid/#sass-mixins
+// Generate semantic grid columns with these mixins.
+@include make-container($gutter: $grid-gutter-width);
+// For each breakpoint, define the maximum width of the container in a media query
+@include make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints);
+// Creates a wrapper for a series of columns
+@include make-row($gutter: $grid-gutter-width);
+// Make the element grid-ready (applying everything but the width)
+@include make-col-ready($gutter: $grid-gutter-width);
+// Add a `max-width` to ensure content within each column does not blow out
+// the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+// do not appear to require this.
+@include make-col($size, $columns: $grid-columns);
+// Reset earlier grid tiers
+@include make-col-auto();
+@include make-col-offset($size, $columns: $grid-columns);
+// Row columns
+// Specify on a parent element(e.g., .row) to force immediate children into NN
+// numberof columns. Supports wrapping to new lines, but does not do a Masonry
+// style grid.
+@include row-cols($count);
